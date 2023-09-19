@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  scroll-behavior: smooth;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
+.search-btn {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    119.78deg,
+    #ff5757 14.24%,
+    rgba(255, 87, 87, 0) 134.54%
+  );
+}
+.new-booking-btn {
+  background: linear-gradient(178.41deg, #fb8085 1.35%, #ff5757 139.03%);
+}
+
+.sidebar {
+  background: linear-gradient(
+    180deg,
+    #eb6b9d 0%,
+    rgba(255, 87, 87, 0.7) 138.64%
+  );
+}
+
+.b-2 {
+  display: flex;
+  width: 12.63px;
+  height: 12.63px;
+  left: 229.04px;
+  top: 144.63px;
+
+  background: linear-gradient(180deg, #fc8f8f 0%, #ff5757 100%);
+  border-radius: 20px;
+}
+.b-3 {
+
+  display: flex;
+  width: 11.73px;
+  height: 11.73px;
+  left: 229.04px;
+  top: 173.5px;
+  
+  border: 1px solid #FF5757;
+  border-radius: 20px; 
+}
+
+body{
+  background-color: #fbfbfb;
 }
